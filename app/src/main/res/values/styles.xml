@@ -19,6 +19,7 @@
         <item name="android:radius">@dimen/radius_botao_customizado</item>
         <item name="android:textSize">@dimen/tamanho_texto_botao_customizado</item>
         <item name="android:padding">@dimen/padding_botao_customizado</item>
+        <item name="android:textColor">@color/colorTextDark</item>
     </style>
 
     <style name="checkbox_pizza">
