@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.felipe.kawabanga.models.Usuario;
+
 public class LoginActivity extends AppCompatActivity {
 
     private TextInputLayout tilLogin;
@@ -28,11 +30,11 @@ public class LoginActivity extends AppCompatActivity {
 
         if(login.equals("pato") && senha.equals("1234")){
             Intent i = new Intent(this,PedidoActivity.class);
-            i.putExtra("usuario",login);
+            i.putExtra("usuario",new Usuario(login,senha));
             startActivity(i);
             finish();
         }else{
-            Toast.makeText(this,"Você errou seu burro",Toast.LENGTH_LONG);
+            Toast.makeText(this,"Você errou seu burro",Toast.LENGTH_LONG).show();
         }
     }
 }

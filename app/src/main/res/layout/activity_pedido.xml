@@ -78,15 +78,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_pizza_grande"
+                android:id="@+id/rbGrande"
                 android:layout_weight="0.3"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_pizza_media"
+                android:id="@+id/rbMedia"
                 android:layout_weight="0.3"/>
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/rbPequena"
                 android:text="@string/txt_pizza_pequena"
                 android:layout_weight="0.3"/>
         </RadioGroup>
@@ -147,7 +150,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txt_calcular"/>
+            android:text="@string/txt_calcular"
+            android:onClick="calcular"/>
 
     </LinearLayout>
 </ScrollView>
