@@ -1,5 +1,6 @@
 package com.example.felipe.kawabanga;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,9 +27,12 @@ public class LoginActivity extends AppCompatActivity {
         String senha = tilSenha.getEditText().getText().toString();
 
         if(login.equals("pato") && senha.equals("1234")){
-
+            Intent i = new Intent(this,PedidoActivity.class);
+            i.putExtra("usuario",login);
+            startActivity(i);
+            finish();
         }else{
-            Toast.makeText(this,"Você errou seu burro",Toast.LENGTH_SHORT);
+            Toast.makeText(this,"Você errou seu burro",Toast.LENGTH_LONG);
         }
     }
 }
